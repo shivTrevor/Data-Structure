@@ -51,3 +51,11 @@ let g = whoIsSmaller(24,36);
 console.log(g);
 
 
+
+//Important notes
+/* 
+ By this method ==>
+ 1> We can find the factors of a given number
+ 2> whether this number is prime or not 
+ 3> find the highest prime number 
+ */
