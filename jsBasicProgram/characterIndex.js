@@ -1,3 +1,5 @@
+//here creating a character array where the value index is treated as a particular character like a ,b,c,d
+
 let str = "hello";
 let charArray = [];
 
@@ -11,3 +13,4 @@ for (let i = 0; i < str.length; i++) {
 }
 
 console.log(charArray);
+
