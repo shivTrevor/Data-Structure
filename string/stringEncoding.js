@@ -12,9 +12,12 @@ algo ==>
 
 
 function stringEncode(str){
+    
     let charArray=[];
+
     //lets create a character array first 
     for(let i=0;i<=str.length-1;i++){
+        
         if(!charArray[str[i]]){
             charArray[str[i]]=1
         }
@@ -22,9 +25,20 @@ function stringEncode(str){
             charArray[str[i]]=charArray[str[i]]+1;
         }
     }
-    let resultString="";
-    //now the string to store the character array and the string here 
-    for(let i=0;i<=charArray.length-1;i++){
-        resultString=resultString+charArray;
-    }
+
+   //creating a new string for storing the output
+   let newStr=""
+   //using js for ....in method
+   
+   for(let char in charArray){
+      newStr=newStr+char+charArray[char];
+     
+   }
+   return newStr;
+ 
 }
+
+
+let str="aaaabbbccd";
+let finalStr=stringEncode(str)
+console.log(finalStr)
