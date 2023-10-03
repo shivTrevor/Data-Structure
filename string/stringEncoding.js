@@ -9,6 +9,7 @@ algo ==>
 3> after that create a loop and put the character and its value there
 */
 
+//one more way do it using the ascii but before that sort the particular array or string ...
 
 
 function stringEncode(str){
