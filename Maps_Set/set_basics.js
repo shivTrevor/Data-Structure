@@ -1,4 +1,4 @@
-/*basics of maps and set 
+/*basics of  set 
 
 A Set is a collection of unique values. It only stores unique elements,
  and if you try to add a duplicate, it won't be added.
@@ -62,4 +62,13 @@ for (let value of iterator1) {
 }
 
 
-//Time complexity and space complexity of the 
+// By using the while loop and next method in set 
+let mySet2 = new Set([1, 2, 3, 4, 5]);
+let iterator2 = mySet2.values();
+
+let next = iterator2.next();
+
+while (!next.done) {
+  console.log(next.value);
+  next = iterator.next();
+}
