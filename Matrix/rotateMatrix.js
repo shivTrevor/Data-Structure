@@ -1,5 +1,5 @@
 //Here we are rotating matrix with the 90 degree 
-
+//Here we are using one additional data structure and that is another matrix with the space complexity n square
 function rotate(matrix){
     let rotate=[];
     let len = matrix.length;
@@ -27,3 +27,7 @@ for (let i = 0; i < 3; i++) {
 
 let matrix=[[1,2,3],[4,5,6],[7,8,9]];
 rotate(matrix)
+
+//============================================================================================================
+//other approach where we do not use any other data structure ....
+//Its a best approach here space complexity ->O(1)
