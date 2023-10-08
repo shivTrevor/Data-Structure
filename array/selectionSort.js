@@ -3,6 +3,7 @@ Algorithm -->
 Find minimum 
 traverse with the latest first element 
 increase the latest first element here .
+Time complexity =>O(n^2)
 */ 
 
 //Creating a swap method{ 
