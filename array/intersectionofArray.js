@@ -14,7 +14,7 @@ function intersection(a,b){
         j++;
      }
   }
-    return result
+    return result;
 }
 
 let a=[1,1,1,2,5,5,5,6,7,8];
