@@ -23,11 +23,8 @@ function decrypted(str,k){
 
             //putting the whole string bro number of times given by the num value s
             while(num!==0){
-                //first time putting the whole string 
-                for(let i=0;i<temp.length;i++){
-                    //appending in the result string bro 
-                    result = result + temp[i];
-                }
+                 //concatenating bro 
+                 result = result+temp;
                 //number of times here bro 
                 num--;
             }
@@ -46,6 +43,40 @@ function decrypted(str,k){
 
 //now if i got a function decrypted then what i will do 
 
-let str="abc3a2e4";
-let result = decrypted(str,6);
-console.log(result)
+// let str="abc3a2e4";
+// let result = decrypted(str,6);
+// console.log(result)
+
+
+//===========================================================================================================
+
+//Optimised version => Using the multiplier bro 
+
+function decrypted(str,k){
+    //let initialise an empty string mere bhai 
+    let temp="";
+    let result="";
+    //first we have inititalised the encrypted key ...
+    for(let i=0;i<str.length;i++){
+        //if the character is not a number then what should i do then what should we do bro 
+        if(isNaN(str[i])){
+         //
+         temp+=str[i];
+        }
+        else{
+            //catch the numb
+             result 
+            }
+            
+        }
+    }
+    
+    //so here i am finding the kth character decrypted string bro 
+    //I mean 9 th character is which is 8th position
+    let resultChar = result[k-1];
+
+     return resultChar;
+
+
+
+
