@@ -1,6 +1,6 @@
 //so here finding the kth decrypted string bro ...
 /*
-Time complexity => O(n*m*(sum of numerical value ))  , 
+Time complexity => O(n*(sum of numerical value ))  , 
 n-> input string length , m-> input string - number of numerical value -> inside while loop 
   , sum of numerical value => inside for loop 
 
@@ -51,32 +51,3 @@ function decrypted(str,k){
 //===========================================================================================================
 
 //Optimised version => Using the multiplier bro 
-
-function decrypted(str,k){
-    //let initialise an empty string mere bhai 
-    let temp="";
-    let result="";
-    //first we have inititalised the encrypted key ...
-    for(let i=0;i<str.length;i++){
-        //if the character is not a number then what should i do then what should we do bro 
-        if(isNaN(str[i])){
-         //
-         temp+=str[i];
-        }
-        else{
-            //catch the numb
-             result 
-            }
-            
-        }
-    }
-    
-    //so here i am finding the kth character decrypted string bro 
-    //I mean 9 th character is which is 8th position
-    let resultChar = result[k-1];
-
-     return resultChar;
-
-
-
-
