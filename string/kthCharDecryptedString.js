@@ -6,7 +6,7 @@ n-> input string length , m-> input string - number of numerical value -> inside
 
 space complexity => O(n) -> result and temp string 
 */
-function decrypted(str){
+function decrypted(str,k){
     //let initialise an empty string mere bhai 
     let temp="";
     let result="";
@@ -36,12 +36,16 @@ function decrypted(str){
         }
     }
     
-     return result;
+    //so here i am finding the kth character decrypted string bro 
+    //I mean 9 th character is which is 8th position
+    let resultChar = result[k-1];
+
+     return resultChar;
 
 }
 
 //now if i got a function decrypted then what i will do 
 
 let str="abc3a2e4";
-let result = decrypted(str);
+let result = decrypted(str,6);
 console.log(result)
