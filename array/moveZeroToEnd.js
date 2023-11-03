@@ -37,7 +37,8 @@ function moveZeroesToEnd(arr){
 // console.log(arr)
 
 
-//=======================================================
+//============================================================================================================
+
 //By using space complexity -> O(n) and time complexity -> O(n)
 
 function zeroesToEnd(){
@@ -65,6 +66,26 @@ function zeroesToEnd(){
    
 }
 
-let arr=[1,2,0,4,3,5,0,8,4,3,0,1];
-let zerosArray = zeroesToEnd(arr)
-console.log(zerosArray)
+// let arr=[1,2,0,4,3,5,0,8,4,3,0,1];
+// let zerosArray = zeroesToEnd(arr)
+// console.log(zerosArray)
+
+//=========================================================================================================
+
+//optimised with time - n and space - 1
+
+
+function moveZeroesToEndOpti(arr) {
+  let nonZeroIndex = 0;
+
+  // Iterate through the array
+  for (let i = 0; i < arr.length; i++) {
+      if (arr[i] !== 0) {
+          // Swap non-zero element with the element at nonZeroIndex
+          [arr[nonZeroIndex], arr[i]] = [arr[i], arr[nonZeroIndex]];
+          nonZeroIndex++;
+      }
+  }
+
+  return arr;
+}
