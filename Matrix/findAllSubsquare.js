@@ -1,4 +1,7 @@
 // Function to print the 2x2 sub-square matrix 
+//time complexity => O(n^2) and space complexity=>O(n^2)
+
+//In better approach we will with using string show result and reduce the space complexity 
 function Print(k, l, matrix) {
     // Create an empty array to store the sub-square matrix
     let resultMat = [];
