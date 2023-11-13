@@ -21,7 +21,52 @@ function FourSumBruteForce(arr,target){
     return false;
 }
 
-let arr=[1,2,3,4,-2,-5,8];
-//so here the test cases is that bro 
-let result = FourSumBruteForce(arr,5);
+// let arr=[1,2,3,4,-2,-5,8];
+// //so here the test cases is that bro 
+// let result = FourSumBruteForce(arr,5);
+// console.log(result)
+
+
+//====================================================================================================
+//4 sum optimised version here bro 
+//sum - (numbers on two index ) == numbers on two index .....
+//time complexity =>O(n^3)
+
+function optimised4Sum(arr, target) {
+    let len = arr.length;
+    let k = 0, l = 0;
+    let reqSum = 0, innerSum = 0;
+
+    // Sort the array to enable two-pointer approach
+    arr.sort((a, b) => a - b);
+
+    for (let i = 0; i < len - 3; i++) {
+        for (let j = i + 1; j < len - 2; j++) {  // Start j from i+1 to avoid duplicate quadruplets
+            k = j + 1;
+            l = len - 1;
+            reqSum = target - (arr[i] + arr[j]);
+
+            while (k < l) {
+                innerSum = arr[k] + arr[l];
+
+                if (innerSum > reqSum) {
+                    l--;
+                } else if (innerSum < reqSum) {
+                    k++;
+                } else {
+                    // Found a quadruplet
+                    return true;
+                }
+            }
+        }
+    }
+
+    // No quadruplet found
+    return false;
+}
+
+
+ let arr=[1,2,3,4,-2,-5,8];
+ //so here the test cases is that bro 
+let result = optimised4Sum(arr,50);
 console.log(result)
