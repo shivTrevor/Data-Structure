@@ -1,5 +1,6 @@
-// search the key in rotating element
+// Search the key in the sorted but rotated array 
 
+//Time complexity => O(logN) and space complexity =>O(1)
 function search(arr, element) {
     let low = 0;
     let high = arr.length - 1;
@@ -31,6 +32,8 @@ function search(arr, element) {
             } else {
                 // Target is in the unsorted left half
                 high = mid - 1;
+
+
             }
         }
     }
