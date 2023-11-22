@@ -8,9 +8,9 @@ function doubles(arr) {
     while (low < high) {
       mid = Math.floor((low + high) / 2);
 
-      //condition if the single element in extreme left or right 
-      if(mid-1===0){return mid}
-      if(mid+1===arr.length){return mid}
+    //   //condition if the single element in extreme left or right 
+    //   if(mid-1===0){return mid}
+    //   if(mid+1===arr.length){return mid}
   
       if (arr[mid - 1] === arr[mid]) { // second occurrence
         second = true;
