@@ -1,6 +1,6 @@
 //so here we are generating the fibonnaci sequence ....
 //0,1,1,2,3,5,8
-
+//Here we are using memoization bro 
 
 var memo=[];
 function fib(num){
@@ -16,7 +16,6 @@ function fib(num){
          memo[num] = fib(num-2)+fib(num-1);
          return memo[num];
     }
-
 }
 
 //==============================================================================================================
