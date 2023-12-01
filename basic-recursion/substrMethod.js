@@ -1,4 +1,7 @@
-function printSubset(input, output, index) {
+//space complexity =>O(n
+//Time => 2^n
+
+function powerSet(input, output, index) {
     // If all elements have been traversed
     if (index >= input.length) {
       // Print the output array
@@ -23,5 +26,16 @@ function printSubset(input, output, index) {
   const outputArray = [];
   const startIndex = 0;
   
-  printSubset(inputArray, outputArray, startIndex);
+  powerSet(inputArray, outputArray, startIndex);
+
+
+/*
+impo note=>
+The space complexity is dominated by the call stack, and it grows linearly with the 
+size of the input array. The auxiliary space used for the output array is not considered
+ because it's part of the desired output and is not an extra space used for computation.
+
+
+
+*/
   
